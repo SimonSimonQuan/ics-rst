@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<Title>Jurdle - The Jamieson Times</Title>
+<center>
+    <h1>Jurdle - The Jamieson Times</h1>
+</center>
+
+<body>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <center>
+        <input type="text" size="40" maxlength="5" onkeydown="keyPressed(event)" id="input" pattern="[A-Za-z]" placeholder="guess some letters!">
+        <br>
+        <br>
+        <table class="table">
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </table>
+        <br>
+        <h1 id="msg"></h1>
+        <br>
+        <table id="keyboard1">
+            <tr>
+                <td onclick="actualKeyPress(this.id)" id="Q">Q</td>
+                <td onclick="actualKeyPress(this.id)" id="W">W</td>
+                <td onclick="actualKeyPress(this.id)" id="E">E</td>
+                <td onclick="actualKeyPress(this.id)" id="R">R</td>
+                <td onclick="actualKeyPress(this.id)" id="T">T</td>
+                <td onclick="actualKeyPress(this.id)" id="Y">Y</td>
+                <td onclick="actualKeyPress(this.id)" id="U">U</td>
+                <td onclick="actualKeyPress(this.id)" id="I">I</td>
+                <td onclick="actualKeyPress(this.id)" id="O">O</td>
+                <td onclick="actualKeyPress(this.id)" id="P">P</td>
+                <td onclick="actualKeyPress(this.id)" id="BACKSPACE" style="width: 90px; padding-right: 10px;">⌫</td>
+            </tr>
+        </table>
+        <table id="keyboar2">
+            <tr>
+                <td onclick="actualKeyPress(this.id)" id="A" >A</td>
+                <td onclick="actualKeyPress(this.id)" id="S" >S</td>
+                <td onclick="actualKeyPress(this.id)" id="D">D</td>
+                <td onclick="actualKeyPress(this.id)" id="F">F</td>
+                <td onclick="actualKeyPress(this.id)" id="G">G</td>
+                <td onclick="actualKeyPress(this.id)" id="H">H</td>
+                <td onclick="actualKeyPress(this.id)" id="J">J</td>
+                <td onclick="actualKeyPress(this.id)" id="K">K</td>
+                <td onclick="actualKeyPress(this.id)" id="L">L</td>
+                <td onclick="actualKeyPress(this.id)" id="ENTER" style="width: 130px;" >ENTER</td>
+            </tr>
+        </table>
+        <table id="keyboard3">
+            <tr>
+                <td onclick="actualKeyPress(this.id)" id="Z">Z</td>
+                <td onclick="actualKeyPress(this.id)" id="X">X</td>
+                <td onclick="actualKeyPress(this.id)" id="C">C</td>
+                <td onclick="actualKeyPress(this.id)" id="V">V</td>
+                <td onclick="actualKeyPress(this.id)" id="B">B</td>
+                <td onclick="actualKeyPress(this.id)" id="N">N</td>
+                <td onclick="actualKeyPress(this.id)" id="M">M</td>
+            </tr>
+        </table>
+    </center>
+    <img id="move" src="./images/hand.png"><img>
+</body>
+
